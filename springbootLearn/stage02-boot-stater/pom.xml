@@ -3,21 +3,35 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.learn</groupId>
-    <artifactId>stage01-bootstart</artifactId>
-    <version>1.0</version>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.7.5</version>
         <relativePath />
     </parent>
+
+    <groupId>com.learn</groupId>
+    <artifactId>stage02-boot-stater</artifactId>
+    <version>1.0</version>
+
     <dependencies>
+        <!--引入spring‐boot‐starter；所有starter的基本配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <!--自动配置连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.14</version>
+        </dependency>
+
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
         </dependency>
 
         <dependency>
@@ -25,12 +39,6 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-
-<!--        自定义启动器-->
-        <dependency>
-            <groupId>com.learn</groupId>
-            <artifactId>stage02-boot-stater</artifactId>
-            <version>1.0</version>
-        </dependency>
     </dependencies>
+
 </project>

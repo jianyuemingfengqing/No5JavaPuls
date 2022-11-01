@@ -1,11 +1,11 @@
-package com.learn.properties;
+package com.learn.autoconfigure;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-//@Component
-//@ConfigurationProperties(prefix = "spring.jdbc.datasource")
-public class DataSourceProperties2 {
+@Component
+@ConfigurationProperties(prefix = "spring.datasource.jdbc")
+public class DataSourceProperties {
     private String driverClassName;
     private String url;
     private String username;
@@ -45,7 +45,7 @@ public class DataSourceProperties2 {
 
     @Override
     public String toString() {
-        return "DataSourceProperties2{" +
+        return "DataSourceProperties{" +
                 "driverClassName='" + driverClassName + '\'' +
                 ", url='" + url + '\'' +
                 ", username='" + username + '\'' +
