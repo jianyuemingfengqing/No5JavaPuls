@@ -10,7 +10,21 @@ spring:
   redis: # 配置redis
     host: localhost
     port: 6379
+  application:
+    name: admin-client
+  boot:
+    admin:
+      client:
+        url: http://localhost:8769   # 指定注册地址 , Spring Boot Admin Server地址
 mybatis:
   type-aliases-package: com.learn.pojo
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
 
 
