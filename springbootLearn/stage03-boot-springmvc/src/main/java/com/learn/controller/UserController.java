@@ -42,6 +42,7 @@ public class UserController {
         users.add(user2);
         users.add(user3);
 
+        System.out.println("handle 控制器");
         return users ;
     }
 }
