@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="stage01-bootstart" />
         <module name="stage02-boot-stater" />
+        <module name="stage03-boot-springmvc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="demo" options="-parameters" />
       <module name="stage01-bootstart" options="-parameters" />
       <module name="stage02-boot-stater" options="-parameters" />
+      <module name="stage03-boot-springmvc" options="-parameters" />
     </option>
   </component>
 </project>
