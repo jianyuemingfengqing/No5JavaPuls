@@ -9,6 +9,7 @@
         <module name="stage01-bootstart" />
         <module name="stage03-boot-springmvc" />
         <module name="stage04-boot-jpa" />
+        <module name="stage05-boot-case" />
         <module name="stage02-boot-stater" />
       </profile>
     </annotationProcessing>
@@ -23,6 +24,7 @@
       <module name="stage02-boot-stater" options="-parameters" />
       <module name="stage03-boot-springmvc" options="-parameters" />
       <module name="stage04-boot-jpa" options="-parameters" />
+      <module name="stage05-boot-case" options="-parameters" />
     </option>
   </component>
 </project>
