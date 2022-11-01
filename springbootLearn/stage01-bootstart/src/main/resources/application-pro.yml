@@ -1,0 +1,8 @@
+# 上线环境
+spring:
+  jdbc:
+    datasource:
+      driverClassName: com.mysql.cj.jdbc.driver
+      url: jdbc:mysql:///business_01
+      username: business
+      password: business
