@@ -14,10 +14,14 @@
         <option value="$PROJECT_DIR$/springbootLearn/stage04-boot-jpa/pom.xml" />
         <option value="$PROJECT_DIR$/springbootLearn/stage05-boot-case/pom.xml" />
         <option value="$PROJECT_DIR$/springbootLearn/stage06-boot-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/rabbitMQLearn/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
   </component>
 </project>

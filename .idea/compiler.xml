@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="stage01-bootstart" />
-        <module name="stage03-boot-springmvc" />
-        <module name="stage04-boot-jpa" />
-        <module name="stage05-boot-case" />
+        <module name="rabbitmq_consumer" />
         <module name="stage02-boot-stater" />
         <module name="stage06-boot-admin" />
+        <module name="stage01-bootstart" />
+        <module name="stage03-boot-springmvc" />
+        <module name="rabbitmq_producer" />
+        <module name="stage04-boot-jpa" />
+        <module name="stage05-boot-case" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
