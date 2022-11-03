@@ -12,9 +12,9 @@
     />
     <rabbit:admin connection-factory="connectionFactory"/>
 
-    <rabbit:queue id="spring-simple-queue" name="spring-simple-queue"
-                  auto-declare="true" auto-delete="false"
-                  durable="true" exclusive="false"/>
+    <rabbit:queue id="spring-simple-queue" name="spring-simple-queue" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
+
+    <rabbit:queue id="spring-worker-queue" name="spring-worker-queue" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
 
     <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
 

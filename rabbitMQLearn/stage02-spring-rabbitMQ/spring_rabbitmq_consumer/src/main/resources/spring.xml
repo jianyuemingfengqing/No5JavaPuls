@@ -12,7 +12,10 @@
                                virtual-host="myhost"
     />
     <rabbit:listener-container connection-factory="connectionFactory">
-        <rabbit:listener ref="RMQListener" queue-names="spring-simple-queue"/>
+<!--        <rabbit:listener ref="RMQListener" queue-names="spring-simple-queue"/>-->
+
+        <rabbit:listener ref="RMQListener1" queue-names="spring-worker-queue"/>
+        <rabbit:listener ref="RMQListener2" queue-names="spring-worker-queue"/>
     </rabbit:listener-container>
 
 </beans>

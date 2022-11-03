@@ -18,4 +18,11 @@ public class SpringRMQTest {
         rabbitTemplate.convertAndSend("","spring-simple-queue",message);
     }
 
+    @Test
+    public void workerTest(){
+        for (int i = 1; i <= 10; i++) {
+            String message = "Hello"+i;
+            rabbitTemplate.convertAndSend("","spring-worker-queue",message);
+        }
+    }
 }
