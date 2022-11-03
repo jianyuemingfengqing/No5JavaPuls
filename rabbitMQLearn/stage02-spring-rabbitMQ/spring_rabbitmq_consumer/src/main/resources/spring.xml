@@ -17,8 +17,11 @@
        <!-- <rabbit:listener ref="RMQListener1" queue-names="spring-worker-queue"/>
         <rabbit:listener ref="RMQListener2" queue-names="spring-worker-queue"/>-->
 
-        <rabbit:listener ref="RMQFanoutListener1" queue-names="spring-fanout-queue1"/>
-        <rabbit:listener ref="RMQFanoutListener2" queue-names="spring-fanout-queue2"/>
+    <!--    <rabbit:listener ref="RMQFanoutListener1" queue-names="spring-fanout-queue1"/>
+        <rabbit:listener ref="RMQFanoutListener2" queue-names="spring-fanout-queue2"/>-->
+
+        <rabbit:listener ref="RMQDirectListener1" queue-names="spring-direct-queue1"/>
+        <rabbit:listener ref="RMQDirectListener2" queue-names="spring-direct-queue2"/>
 
 
 

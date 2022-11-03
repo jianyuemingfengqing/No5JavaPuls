@@ -16,7 +16,6 @@
 
     <rabbit:queue id="spring-worker-queue" name="spring-worker-queue" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
 
-
     <rabbit:queue id="spring-fanout-queue1" name="spring-fanout-queue1" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
     <rabbit:queue id="spring-fanout-queue2" name="spring-fanout-queue2" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
 
@@ -26,6 +25,16 @@
             <rabbit:binding queue="spring-fanout-queue2"/>
         </rabbit:bindings>
     </rabbit:fanout-exchange>
+
+    <rabbit:queue id="spring-direct-queue1" name="spring-direct-queue1" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
+    <rabbit:queue id="spring-direct-queue2" name="spring-direct-queue2" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
+
+    <rabbit:direct-exchange name="exchange-direct" auto-delete="false" durable="true" auto-declare="true" >
+        <rabbit:bindings>
+            <rabbit:binding queue="spring-direct-queue1" key="spring1"/>
+            <rabbit:binding queue="spring-direct-queue2" key="spring2"/>
+        </rabbit:bindings>
+    </rabbit:direct-exchange>
 
     <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
 

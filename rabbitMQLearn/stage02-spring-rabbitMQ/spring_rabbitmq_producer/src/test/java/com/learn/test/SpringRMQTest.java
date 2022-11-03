@@ -31,4 +31,9 @@ public class SpringRMQTest {
         String message = "Hello";
         rabbitTemplate.convertAndSend("exchange-fanout","",message);
     }
+    @Test
+    public void directTest() {
+        String message = "Hello";
+        rabbitTemplate.convertAndSend("exchange-direct","spring2",message);
+    }
 }
