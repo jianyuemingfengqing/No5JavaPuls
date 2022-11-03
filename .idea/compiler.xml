@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rabbitmq_consumer" />
+        <module name="spring_rabbitmq_producer" />
         <module name="stage02-boot-stater" />
         <module name="stage06-boot-admin" />
         <module name="stage01-bootstart" />
+        <module name="spring_rabbitmq_consumer" />
         <module name="stage03-boot-springmvc" />
         <module name="rabbitmq_producer" />
         <module name="stage04-boot-jpa" />
