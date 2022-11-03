@@ -25,4 +25,10 @@ public class SpringRMQTest {
             rabbitTemplate.convertAndSend("","spring-worker-queue",message);
         }
     }
+
+    @Test
+    public void fanoutTest() {
+        String message = "Hello";
+        rabbitTemplate.convertAndSend("exchange-fanout","",message);
+    }
 }

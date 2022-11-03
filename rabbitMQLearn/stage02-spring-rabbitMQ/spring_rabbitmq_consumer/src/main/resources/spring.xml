@@ -14,8 +14,14 @@
     <rabbit:listener-container connection-factory="connectionFactory">
 <!--        <rabbit:listener ref="RMQListener" queue-names="spring-simple-queue"/>-->
 
-        <rabbit:listener ref="RMQListener1" queue-names="spring-worker-queue"/>
-        <rabbit:listener ref="RMQListener2" queue-names="spring-worker-queue"/>
+       <!-- <rabbit:listener ref="RMQListener1" queue-names="spring-worker-queue"/>
+        <rabbit:listener ref="RMQListener2" queue-names="spring-worker-queue"/>-->
+
+        <rabbit:listener ref="RMQFanoutListener1" queue-names="spring-fanout-queue1"/>
+        <rabbit:listener ref="RMQFanoutListener2" queue-names="spring-fanout-queue2"/>
+
+
+
     </rabbit:listener-container>
 
 </beans>
