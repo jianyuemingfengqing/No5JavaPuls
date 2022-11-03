@@ -20,8 +20,11 @@
     <!--    <rabbit:listener ref="RMQFanoutListener1" queue-names="spring-fanout-queue1"/>
         <rabbit:listener ref="RMQFanoutListener2" queue-names="spring-fanout-queue2"/>-->
 
-        <rabbit:listener ref="RMQDirectListener1" queue-names="spring-direct-queue1"/>
-        <rabbit:listener ref="RMQDirectListener2" queue-names="spring-direct-queue2"/>
+      <!--  <rabbit:listener ref="RMQDirectListener1" queue-names="spring-direct-queue1"/>
+        <rabbit:listener ref="RMQDirectListener2" queue-names="spring-direct-queue2"/>-->
+
+        <rabbit:listener ref="RMQTopicListener1" queue-names="spring-topic-queue1"/>
+        <rabbit:listener ref="RMQTopicListener2" queue-names="spring-topic-queue2"/>
 
 
 

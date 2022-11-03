@@ -36,6 +36,16 @@
         </rabbit:bindings>
     </rabbit:direct-exchange>
 
+    <rabbit:queue id="spring-topic-queue1" name="spring-topic-queue1" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
+    <rabbit:queue id="spring-topic-queue2" name="spring-topic-queue2" auto-declare="true" auto-delete="false" durable="true" exclusive="false"/>
+
+    <rabbit:topic-exchange name="exchange-topic" auto-delete="false" durable="true" auto-declare="true" >
+        <rabbit:bindings>
+            <rabbit:binding queue="spring-topic-queue1"  pattern="topic.*"/>
+            <rabbit:binding queue="spring-topic-queue2"  pattern="topic.#"/>
+        </rabbit:bindings>
+    </rabbit:topic-exchange>
+
     <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
 
 </beans>
