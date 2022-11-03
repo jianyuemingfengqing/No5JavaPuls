@@ -1,4 +1,4 @@
-package com.learn.fanout;
+package com.learn.direct;
 
 import com.learn.utils.RabbitMQConnectionUtils;
 import com.rabbitmq.client.BuiltinExchangeType;
@@ -20,21 +20,21 @@ public class producer {
         Channel channel = connection.createChannel();
 
         //创建队列
-        String queueName = "rabbitmq-fanout-queue";
+        String queueName = "rabbitmq-direct-queue";
         // 多条队列
         channel.queueDeclare(queueName + 1, true, false, false, null);
         channel.queueDeclare(queueName + 2, true, false, false, null);
 
         // 创建交换机
-        String exchangeName = "fanout_exchange";
-        channel.exchangeDeclare(exchangeName, BuiltinExchangeType.FANOUT, true, false, null);
+        String exchangeName = "direct_exchange";
+        channel.exchangeDeclare(exchangeName, BuiltinExchangeType.DIRECT, true, false, null);
 
         // 绑定交换机与队列
-        channel.queueBind(queueName + 1, exchangeName, "");
-        channel.queueBind(queueName + 2, exchangeName, "");
+        channel.queueBind(queueName + 1, exchangeName, "abc");
+        channel.queueBind(queueName + 2, exchangeName, "cba");
 
         String message = "niHao";
-        channel.basicPublish(exchangeName, "", null, message.getBytes());
+        channel.basicPublish(exchangeName, "abc", null, message.getBytes());
 
         channel.close();
         connection.close();

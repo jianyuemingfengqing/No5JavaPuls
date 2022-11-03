@@ -1,4 +1,4 @@
-package com.learn.fanout;
+package com.learn.direct;
 
 import com.learn.utils.RabbitMQConnectionUtils;
 import com.rabbitmq.client.*;
@@ -11,7 +11,7 @@ public class Consumer1 {
         Connection connection = RabbitMQConnectionUtils.getConnection();
         Channel channel = connection.createChannel();
 
-        String queueName = "rabbitmq-fanout-queue1";
+        String queueName = "rabbitmq-direct-queue1";
         DefaultConsumer consumer = new DefaultConsumer(channel) {
             @Override
             public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body) throws IOException {
