@@ -9,13 +9,14 @@
                                username="admin"
                                password="admin"
                                virtual-host="myhost"
+                               publisher-returns="true"
+                               confirm-type="SIMPLE"
     />
     <rabbit:admin connection-factory="connectionFactory"/>
-
     <rabbit:template id="rabbitTemplate" connection-factory="connectionFactory"/>
 
-    <rabbit:queue durable="true" id="queue-confirm" name="queue-confirm" auto-delete="false" exclusive="false"/>
-    <rabbit:direct-exchange name="confirm-exchange" auto-delete="false" durable="true" auto-declare="false">
+    <rabbit:queue id="queue-confirm" name="queue-confirm" durable="true"  auto-delete="false" exclusive="false"/>
+    <rabbit:direct-exchange name="confirm-exchange" auto-delete="false" durable="true" auto-declare="true">
         <rabbit:bindings>
             <rabbit:binding queue="queue-confirm" key="confirm"/>
         </rabbit:bindings>
