@@ -2,6 +2,7 @@ package com.learn.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.amqp.core.ReturnedMessage;
 import org.springframework.amqp.rabbit.connection.CorrelationData;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,12 +16,12 @@ public class ProducerTest {
     RabbitTemplate rabbitTemplate;
 
     @Test
-    public void confirmTest(){
+    public void confirmTest() {
         rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
             @Override
             public void confirm(CorrelationData correlationData, boolean ack, String cause) {
                 //ack  确认
-                if (ack){
+                if (ack) {
                     System.out.println("连接交换机成功");
                 } else {
                     System.out.println("错误原因 " + cause);
@@ -28,6 +29,17 @@ public class ProducerTest {
             }
         });
 
-    rabbitTemplate.convertAndSend("confirm-exchange","confirm","test confirm  测试");
+        rabbitTemplate.setMandatory(true);
+        rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
+            @Override
+            public void returnedMessage(ReturnedMessage returned) {
+                System.out.println("退回的消息   " + new String(returned.getMessage().getBody()));
+                System.out.println("错误代码   " + returned.getReplyCode());
+                System.out.println("错误原因   " + returned.getReplyText());
+            }
+        });
+
+//        rabbitTemplate.convertAndSend("confirm-exchange", "confirm", "test confirm  测试");
+        rabbitTemplate.convertAndSend("confirm-exchange", "confirm2", "test confirm  测试");
     }
 }
