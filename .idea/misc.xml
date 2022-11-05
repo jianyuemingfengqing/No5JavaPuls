@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/springbootLearn/stage05-boot-case/pom.xml" />
         <option value="$PROJECT_DIR$/springbootLearn/stage06-boot-admin/pom.xml" />
         <option value="$PROJECT_DIR$/rabbitMQLearn/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudLearn/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudLearn/guli_stock/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudLearn/guli_order/pom.xml" />
       </list>
     </option>
   </component>
