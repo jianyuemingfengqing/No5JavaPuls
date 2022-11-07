@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/springcloudLearn/eureka_server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/springcloudLearn/guli-gateway" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/springcloudLearn/guli_order" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/springcloudLearn/guli_stock" vcs="Git" />
   </component>

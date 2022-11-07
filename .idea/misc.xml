@@ -19,6 +19,7 @@
         <option value="$PROJECT_DIR$/springcloudLearn/guli_stock/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudLearn/guli_order/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudLearn/eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudLearn/guli-gateway/pom.xml" />
       </list>
     </option>
   </component>

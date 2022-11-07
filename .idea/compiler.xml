@@ -20,6 +20,7 @@
         <module name="guli_order" />
         <module name="eureka_server" />
         <module name="stage01-bootstart" />
+        <module name="guli-gateway" />
         <module name="stage03-boot-springmvc" />
         <module name="rabbitmq_producer" />
         <module name="springcloudLearn" />
@@ -33,6 +34,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
+      <module name="guli-gateway" options="-parameters" />
       <module name="guli_order" options="-parameters" />
       <module name="guli_stock" options="-parameters" />
       <module name="stage01-bootstart" options="-parameters" />
