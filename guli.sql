@@ -25,3 +25,4 @@ CREATE TABLE `t_stock`
 -- 初始化测试数据
 INSERT INTO t_stock(product_id,title , COUNT) VALUES( '1001' , '卫龙辣条' , 1000);
 
+DELETE FROM t_order WHERE user_id = 9527;
