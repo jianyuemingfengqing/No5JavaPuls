@@ -19,6 +19,7 @@
         <module name="rabbitmq_consumer" />
         <module name="rabbitmq-producer-spring" />
         <module name="spring_rabbitmq_producer" />
+        <module name="springelasticsearch" />
         <module name="guli_order" />
         <module name="nacos-guli-stock" />
         <module name="eureka_server" />
@@ -43,6 +44,7 @@
       <module name="guli_stock" options="-parameters" />
       <module name="nacos-guli-order" options="-parameters" />
       <module name="nacos-guli-stock" options="-parameters" />
+      <module name="springelasticsearch" options="-parameters" />
       <module name="stage01-bootstart" options="-parameters" />
       <module name="stage02-boot-stater" options="-parameters" />
       <module name="stage03-boot-springmvc" options="-parameters" />
