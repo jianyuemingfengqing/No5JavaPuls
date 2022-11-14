@@ -17,7 +17,6 @@ import java.util.Date;
 public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements AccountService {
     @Resource
     LogService logService;
-
     @Resource
     AccountMapper accountMapper;
 
