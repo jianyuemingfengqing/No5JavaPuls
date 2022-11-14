@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/springcloud-alibaba/nacos-guli-order/pom.xml" />
         <option value="$PROJECT_DIR$/springcloud-alibaba/nacos-guli-stock/pom.xml" />
         <option value="$PROJECT_DIR$/springelasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/springseata/pom.xml" />
       </list>
     </option>
   </component>

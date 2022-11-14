@@ -12,6 +12,7 @@
         <module name="stage06-boot-admin" />
         <module name="rabbitmq-consumer-spring" />
         <module name="nacos-guli-order" />
+        <module name="springseata" />
         <module name="springcloud-alibaba" />
         <module name="spring_rabbitmq_consumer" />
         <module name="stage04-boot-jpa" />
