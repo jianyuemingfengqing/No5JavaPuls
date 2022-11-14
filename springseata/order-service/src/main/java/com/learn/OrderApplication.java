@@ -8,8 +8,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @MapperScan(basePackages = "com.learn.mapper") //扫描mapper 或者可以在mapper中加注解
 @EnableFeignClients
-public class AccountApplication {
+public class OrderApplication {
     public static void main(String[] args) {
-        SpringApplication.run(AccountApplication.class, args);
+        SpringApplication.run(OrderApplication.class, args);
     }
 }
