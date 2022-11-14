@@ -46,8 +46,11 @@
     <file url="file://$PROJECT_DIR$/springcloudLearn/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springelasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springseata/account-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springseata/business-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springseata/order-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springseata/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springseata/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springseata/storage-service/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
