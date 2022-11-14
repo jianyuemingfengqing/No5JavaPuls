@@ -12,7 +12,6 @@
         <module name="stage06-boot-admin" />
         <module name="rabbitmq-consumer-spring" />
         <module name="nacos-guli-order" />
-        <module name="springseata" />
         <module name="springcloud-alibaba" />
         <module name="spring_rabbitmq_consumer" />
         <module name="stage04-boot-jpa" />
@@ -28,6 +27,7 @@
         <module name="guli-gateway" />
         <module name="stage03-boot-springmvc" />
         <module name="rabbitmq_producer" />
+        <module name="account-service" />
         <module name="springcloudLearn" />
       </profile>
     </annotationProcessing>
@@ -38,6 +38,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-service" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
       <module name="guli-gateway" options="-parameters" />
@@ -46,6 +47,7 @@
       <module name="nacos-guli-order" options="-parameters" />
       <module name="nacos-guli-stock" options="-parameters" />
       <module name="springelasticsearch" options="-parameters" />
+      <module name="springseata" options="" />
       <module name="stage01-bootstart" options="-parameters" />
       <module name="stage02-boot-stater" options="-parameters" />
       <module name="stage03-boot-springmvc" options="-parameters" />
