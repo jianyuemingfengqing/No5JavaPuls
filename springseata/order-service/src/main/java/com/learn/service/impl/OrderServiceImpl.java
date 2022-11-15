@@ -6,6 +6,7 @@ import com.learn.feign.AccountClient;
 import com.learn.mapper.OrderMapper;
 import com.learn.service.OrderService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -13,7 +14,7 @@ import javax.annotation.Resource;
 public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order>  implements OrderService {
     @Resource
     AccountClient accountClient;
-
+    @Transactional
     @Override
     public void create(String userId, String commodityCode, Integer count) {
         Order order = new Order();

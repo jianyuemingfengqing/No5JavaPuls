@@ -6,6 +6,7 @@ import com.learn.entity.Storage;
 import com.learn.mapper.StorageMapper;
 import com.learn.service.StorageService;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -13,7 +14,7 @@ import javax.annotation.Resource;
 public class StorageServiceImpl extends ServiceImpl<StorageMapper, Storage> implements StorageService {
     @Resource
     StorageMapper storageMapper;
-
+    @Transactional
     @Override
     public void deduct(String commodityCode, Integer count) {
 
