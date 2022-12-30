@@ -1,6 +1,7 @@
 package com.learn.springelasticsearch;
 
 import com.learn.springelasticsearch.entity.User;
+import org.elasticsearch.client.RestHighLevelClient;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate;
@@ -13,6 +14,9 @@ class EsDemoApplicationTests {
 
     @Resource
     private ElasticsearchRestTemplate elasticsearchRestTemplate;
+
+    @Resource
+    private RestHighLevelClient restHighLevelClient; // 原生客户端, 结合kb 调试方便
 
     @Test
     void contextLoads() {
@@ -35,5 +39,9 @@ class EsDemoApplicationTests {
         // 新增 修改
         elasticsearchRestTemplate.save(user);
     }
-
+@Test
+    public void testDelete(){
+        // 删除
+        elasticsearchRestTemplate.delete(User.class);
+    }
 }

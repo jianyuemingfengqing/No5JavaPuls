@@ -51,7 +51,7 @@
       <module name="nacos-guli-order" options="-parameters" />
       <module name="nacos-guli-stock" options="-parameters" />
       <module name="order-service" options="-parameters" />
-      <module name="springelasticsearch" options="-parameters" />
+      <module name="springelasticsearch" options="" />
       <module name="springseata" options="" />
       <module name="stage01-bootstart" options="-parameters" />
       <module name="stage02-boot-stater" options="-parameters" />
