@@ -7,40 +7,59 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="stage06-boot-admin" />
+        <module name="business-service" />
+        <module name="rabbitmq-producer-spring" />
+        <module name="spring_rabbitmq_producer" />
+        <module name="springelasticsearch" />
+        <module name="guli_order" />
+        <module name="nacos-guli-stock" />
+        <module name="eureka_server" />
+        <module name="stage03-boot-springmvc" />
+        <module name="rabbitmq_producer" />
+        <module name="account-service" />
+        <module name="springcloudLearn" />
         <module name="guli_stock" />
         <module name="stage02-boot-stater" />
-        <module name="stage06-boot-admin" />
         <module name="rabbitmq-consumer-spring" />
+        <module name="nacos-guli-order" />
+        <module name="springcloud-alibaba" />
         <module name="spring_rabbitmq_consumer" />
+        <module name="storage-service" />
         <module name="stage04-boot-jpa" />
         <module name="stage05-boot-case" />
         <module name="rabbitmq_consumer" />
-        <module name="rabbitmq-producer-spring" />
-        <module name="spring_rabbitmq_producer" />
-        <module name="guli_order" />
-        <module name="eureka_server" />
         <module name="stage01-bootstart" />
-        <module name="stage03-boot-springmvc" />
-        <module name="rabbitmq_producer" />
-        <module name="springcloudLearn" />
+        <module name="guli-gateway" />
+        <module name="order-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
+      <module name="springcloudAlibaba" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="account-service" options="-parameters" />
+      <module name="business-service" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="eureka_server" options="-parameters" />
+      <module name="guli-gateway" options="-parameters" />
       <module name="guli_order" options="-parameters" />
       <module name="guli_stock" options="-parameters" />
+      <module name="nacos-guli-order" options="-parameters" />
+      <module name="nacos-guli-stock" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="springelasticsearch" options="-parameters" />
+      <module name="springseata" options="" />
       <module name="stage01-bootstart" options="-parameters" />
       <module name="stage02-boot-stater" options="-parameters" />
       <module name="stage03-boot-springmvc" options="-parameters" />
       <module name="stage04-boot-jpa" options="-parameters" />
       <module name="stage05-boot-case" options="-parameters" />
       <module name="stage06-boot-admin" options="-parameters" />
+      <module name="storage-service" options="-parameters" />
     </option>
   </component>
 </project>

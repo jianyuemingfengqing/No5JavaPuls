@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ComposerSettings">
-    <execution />
-  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -19,6 +16,13 @@
         <option value="$PROJECT_DIR$/springcloudLearn/guli_stock/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudLearn/guli_order/pom.xml" />
         <option value="$PROJECT_DIR$/springcloudLearn/eureka_server/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudLearn/guli-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloudAlibaba/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-alibaba/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-alibaba/nacos-guli-order/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud-alibaba/nacos-guli-stock/pom.xml" />
+        <option value="$PROJECT_DIR$/springelasticsearch/pom.xml" />
+        <option value="$PROJECT_DIR$/springseata/pom.xml" />
       </list>
     </option>
   </component>
